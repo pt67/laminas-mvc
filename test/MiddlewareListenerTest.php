@@ -469,7 +469,6 @@ class MiddlewareListenerTest extends TestCase
         $application->expects(self::any())->method('getServiceManager')->willReturn($serviceManager);
         $application->expects(self::any())->method('getResponse')->willReturn(new Response());
         $middleware->expects(self::never())->method('__invoke');
-
         $event = new MvcEvent();
 
         $event->setResult($alreadySetResult); // a result is already there - listener should bail out early
