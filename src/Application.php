@@ -30,7 +30,7 @@ use Laminas\Stdlib\ResponseInterface;
  * - MiddlewareListener
  * - ViewManager
  *
- * The most common workflow is:
+ * The most common workflow is: 
  * <code>
  * $services = new Laminas\ServiceManager\ServiceManager($servicesConfig);
  * $app      = new Application($appConfig, $services);
@@ -164,6 +164,7 @@ class Application implements
 
     /**
      * Retrieve the service manager
+     *
      *
      * @return ServiceManager
      */
